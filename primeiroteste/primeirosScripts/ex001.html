@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css"> 
+    <title>Primeiro teste de JavaScript</title> 
+</head> 
+<body> 
+    <script> 
+        // var nome = window.prompt("Qual o seu nome?"); 
+        // alert("Prazer em te conhecer, " + nome + "!"); 
+        // if (nome == 'Enzo') { 
+        //     alert("Que nome bonito!"); 
+        // } else { 
+        //     alert("Nome comum!"); 
+        // } 
+        // var n1 = Number(window.prompt("Digite outro número: ")); 
+        // var n2 = Number(window.prompt("Digite outro número: ")); 
+        // var s = n1 + n2; 
+        // window.alert(`A soma entre ${n1} e ${n2} é ${s}`); 
+        // s.lenght 
+        // s.toUpperCase() 
+        // s.toLowerCase() 
+        // var nome = window.prompt('Qual o seu nome? '); 
+        // document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br>`); 
+        // document.write(`Seu nome em maísculas é ${nome.toUpperCase()}!<br>`); 
+        // document.write(`Seu nome em minusculas é ${nome.toLowerCase()}!<br>`); 
+        // var salario = Number(window.prompt('Qual o seu salário atual? ')); 
+        // // salario = salario.toFixed(2).replace('.', ','); // trocar '.' por ',' 
+        // salario = salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // trocar para moeda brasileira 
+        // document.write(`Seu salário atual é de: <strong>${salario}</strong>!`); 
+        var number1 = Number(window.prompt('Digite um número: '));
+        var number2 = Number(window.prompt('Digite outro valor: '));
+        var operação = String(window.prompt('Qual operação deseja realizar (+, -, *, /)?'));
+        var resultado = 0;
+        if (operação == '+') {
+            resultado = number1 + number2;
+            window.alert(`A soma de ${number1} + ${number2} = ${resultado}`);
+        } else if (operação == '-') {
+            resultado = number1 - number2;
+            window.alert(`A subtração de ${number1} - ${number2} = ${resultado}`);
+        } else if (operação == '/') {
+            if (number1 !== 0 && number2 !== 0) {
+                resultado = number1 / number2;
+                window.alert(`A divisão de ${number1} / ${number2} = ${resultado}`);
+            } else {
+                window.alert("Divisão não pode ser realizada por 0");
+            }
+        } else if (operação == '*') {
+            resultado = number1 * number2;
+            window.alert(`A multiplicação de ${number1} * ${number2} = ${resultado}`);
+        }
+    </script> 
+</body> 
+</html> 
