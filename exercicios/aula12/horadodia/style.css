@@ -23,8 +23,12 @@ footer {
     text-align: center;
     font-style: italic;
 }
-div > img {
+
+div {
     padding: 10px;
+}
+
+div > img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
