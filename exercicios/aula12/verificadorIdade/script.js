@@ -23,7 +23,7 @@ function verificar() {
                 // Adult
                 img.setAttribute('src', 'homem-adulto.jpg')
             } else {
-                // Elderly
+                // Old
                 img.setAttribute('src', 'homem-idoso.jpg')
             }
         } else { 
@@ -38,7 +38,7 @@ function verificar() {
                 // Adult
                 img.setAttribute('src', 'mulher-adulta.jpg')
             } else {
-                // Granny
+                // Old
                 img.setAttribute('src', 'mulher-idosa.jpeg')
             }
         }
