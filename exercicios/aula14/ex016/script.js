@@ -22,7 +22,7 @@ function contar() {
         } else {
             // Contagem regressiva
             for (start; start >= end; start -= step) {
-                res.innerHTML += `${start} \u{1F449} `
+                res.innerHTML += `${start} \u{1F449}`
             }
         }
         res.innerHTML += `\u{1F3C1}`
