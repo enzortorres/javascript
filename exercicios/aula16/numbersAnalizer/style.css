@@ -17,7 +17,9 @@ section {
 }
 
 #select {
+    display: block;
     width: 150px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -28,4 +30,7 @@ footer {
 
 div {
     padding: 10px;
+}
+#copy {
+    color: white;
 }
