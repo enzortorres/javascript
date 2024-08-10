@@ -4,7 +4,7 @@ let res = document.querySelector('div#res')
 let valores = []
 
 
-function isNumber(n) {
+function isNumber(n) { // FUNÇÃO CRIADA PARA SABER SE O VALOR DIGITADO NO INPUT É UM NÚMERO
     if (Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {
@@ -12,7 +12,7 @@ function isNumber(n) {
     }
 }
 
-function InList(n, l) {
+function InList(n, l) { // FUNÇÃO CRIADA PARA SABER O NÚMERO JA ESTÁ NA LISTA
     if (l.indexOf(Number(n)) != -1) {
         return true
     } else {

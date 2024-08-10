@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eventos DOM</title>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+    <script>
+        // EVENTOS DOM MOUSE
+        // QUANDO ENTRA COM O MOUSE NA DIV = onmouseenter
+        // QUANDO O MOUSE SE MOVE POR DENTRO DA DIV = onmousemove
+        // QUANDO PRESSIONAR O MOUSE NA DIV = onmousedown
+        // QUANDO PARAR DE PRESSIONARO MOUSE NA DIV = onmouseup
+        // QUANDO CLICKAR DENTRO DA DIV = onclick
+        // QUANDO TIRAR O MOUSE DA DIV = onmouseout
+        
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+    
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
