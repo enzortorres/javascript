@@ -52,12 +52,12 @@ function finalizar() {
             }
         }
         media = soma / total
-        let roundedMedia = parseFloat(media.toFixed(2))
+        media = parseFloat(media.toFixed(2))
         res.innerHTML = ''
         res.innerHTML += `<p>Ao todo, temos ${total} números cadastrados.</p>`
         res.innerHTML += `<p>O maior valor informado foi ${maior}</p>`
         res.innerHTML += `<p>O menor valor informado foi ${menor}</p>`
         res.innerHTML += `<p>Somando todos os valores, temos ${soma}</p>`
-        res.innerHTML += `<p>A media dos valores digitados é ${roundedMedia}</p>`
+        res.innerHTML += `<p>A media dos valores digitados é ${media}</p>`
     }
 }
