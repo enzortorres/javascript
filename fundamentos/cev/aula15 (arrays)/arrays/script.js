@@ -17,3 +17,8 @@ for (let i in num) {
 }
 console.log(num.indexOf(7))
 console.log(num.indexOf(3))
+if (num.indexOf(8) == -1) {
+    console.log("Este valor não existe na lista.")
+} else {
+    console.log(`Este valor está na casa ${num.indexOf(8)}`)
+}
