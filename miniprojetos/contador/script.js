@@ -14,7 +14,7 @@ function contar() {
     if (end == '' || start == '' || step == '') {
         res.innerHTML = 'Impossible to count!'
     } else {
-        if(start < end ) {
+        if(start < end) {
             // Contagem crescente
             for (start; start <= end; start += step) {
                 res.innerHTML += `${start} \u{1F449} `
