@@ -7,7 +7,7 @@
     <script src="script.js"></script>
     <title>Calculadora</title>
 </head>
-<body>
+<body onload="init()">
     <main>
         <table>
             <tr>
@@ -17,17 +17,17 @@
             </tr>
             <tr>
                 <td>
-                    <button>
+                    <button onclick="operacao('**')">
                         x²
                     </button>
                 </td>
                 <td>
-                    <button>
+                    <button onclick="operacao('1/2')">
                         1/2
                     </button>
                 </td>
                 <td>
-                    <button>
+                    <button onclick="operacao('C')">
                         C
                     </button>
                 </td>
@@ -39,83 +39,83 @@
             </tr>
             <tr>
                 <td>
-                    <button onclick="addNumbers(7)">
+                    <button onclick="addNumbers('7')">
                         7
                     </button>
                 </td>
                 <td>
-                    <button onclick="addNumbers(8)">
+                    <button onclick="addNumbers('8')">
                         8
                     </button>
                 </td>
                 <td>
-                    <button onclick="addNumbers(9)">
+                    <button onclick="addNumbers('9')">
                         9
                     </button>
                 </td>
                 <td>
-                    <button>
+                    <button onclick="operacao('*')">
                         x
                     </button>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button onclick="addNumbers(4)">
+                    <button onclick="addNumbers('4')">
                         4
                     </button>
                 </td>
                 <td>
-                    <button onclick="addNumbers(5)">
+                    <button onclick="addNumbers('5')">
                         5
                     </button>
                 </td>
                 <td>
-                    <button onclick="addNumbers(6)">
+                    <button onclick="addNumbers('6')">
                         6
                     </button>
                 </td>
                 <td>
-                    <button>
+                    <button onclick="operacao('-')">
                         -
                     </button>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button onclick="addNumbers(9)">
+                    <button onclick="addNumbers('1')">
                         1
                     </button>
                 </td>
                 <td>
-                    <button onclick="addNumbers(2)">
+                    <button onclick="addNumbers('2')">
                         2
                     </button>
                 </td>
                 <td>
-                    <button onclick="addNumbers(3)">
+                    <button onclick="addNumbers('3')">
                         3
                     </button>
                 </td>
                 <td>
-                    <button onclick="oper('+')">
+                    <button onclick="operacao('+')">
                         +
                     </button>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button>
+                    <button onclick="operacao('/')">
                         /
                     </button>
                 </td>
                 <td>
-                    <button onclick="addNumbers(0)">
+                    <button onclick="addNumbers('0')">
                         0
                     </button>
                 </td>
                 <td>
-                    <button>
+                    <button onclick="addNumbers('.')">
                         ,
                     </button>
                 </td>
