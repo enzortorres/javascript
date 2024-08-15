@@ -8,6 +8,7 @@
     <title>Calculadora</title>
 </head>
 <body onload="init()">
+    <h1>Calculadora (apenas 2 valores)</h1>
     <main>
         <table>
             <tr>
@@ -17,23 +18,23 @@
             </tr>
             <tr>
                 <td>
-                    <button onclick="operacao('**')">
-                        x²
-                    </button>
-                </td>
-                <td>
-                    <button onclick="operacao('1/2')">
-                        1/2
-                    </button>
-                </td>
-                <td>
                     <button onclick="operacao('C')">
                         C
                     </button>
                 </td>
                 <td>
-                    <button>
+                    <button onclick="back()">
                         <-
+                    </button>
+                </td>
+                <td>
+                    <button onclick="operacao('/')">
+                        /
+                    </button>
+                </td>
+                <td>
+                    <button onclick="operacao('x')">
+                        *
                     </button>
                 </td>
             </tr>
@@ -54,8 +55,8 @@
                     </button>
                 </td>
                 <td>
-                    <button onclick="operacao('*')">
-                        x
+                    <button onclick="operacao('-')">
+                        -
                     </button>
                 </td>
             </tr>
@@ -76,8 +77,8 @@
                     </button>
                 </td>
                 <td>
-                    <button onclick="operacao('-')">
-                        -
+                    <button onclick="operacao('+')">
+                        +
                     </button>
                 </td>
             </tr>
@@ -97,19 +98,14 @@
                         3
                     </button>
                 </td>
-                <td>
-                    <button onclick="operacao('+')">
-                        +
+                <td rowspan="2">
+                    <button id="result" onclick="result()">
+                        =
                     </button>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <button onclick="operacao('/')">
-                        /
-                    </button>
-                </td>
-                <td>
+                <td colspan="2">
                     <button onclick="addNumbers('0')">
                         0
                     </button>
@@ -119,11 +115,7 @@
                         ,
                     </button>
                 </td>
-                <td>
-                    <button id="result" onclick="result()">
-                        =
-                    </button>
-                </td>
+                
             </tr>
         </table>
     </main>

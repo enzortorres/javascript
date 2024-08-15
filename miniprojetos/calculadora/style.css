@@ -9,15 +9,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background: grey
+}
+h1 {
+    margin: 10px 0px 0px 0px;
 }
 main {
     width: 400px;    
     outline: 1px solid black;
-    background: grey;
+    border-radius: 20px;
+    background: black;
+    margin: auto;
+    padding: 20px;
 }
 table {
-    padding: 10px;
-    background: gray
+    background: black;
 }
 tr td {
     width: 100px;
@@ -27,13 +34,19 @@ button {
     width: 100%;
     height: 100%;
     font-size: 36px;
+    background: rgb(63, 63, 63);
+}
+button:hover {
+    background: rgb(91, 91, 91);
+    cursor: pointer;
 }
 #result {
     background: rgb(13, 93, 232);
 }
 header {
-    margin: 10px auto;
-    width: 380px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
