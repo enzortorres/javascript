@@ -54,7 +54,7 @@ function result() {
         var resultado = Number(string1) / Number(string2)
     } 
     if (!Number.isInteger(resultado)) {
-        calculo.innerHTML = resultado.toFixed(3)
+        calculo.innerHTML = resultado.toFixed(2)
     } else {
         calculo.innerHTML = resultado
     }
