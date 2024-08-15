@@ -20,18 +20,11 @@ function addNumbers(n) {
 }
 
 function operacao(string) {
-    var calculo = document.querySelector('header#calculo')
-    if (string == '**') {
-        var resultado = Number(string1) ** 2
-        calculo.innerHTML = resultado
-    } else if (string == '1/2') {
-        var resultado = Number(string1) / 2
-        calculo.innerHTML = resultado
-    } else if (string == 'C') {
-        string1 = ''
-        string2 = '' 
-        oper = ''
+    var calculo = document.querySelector('header#calculo')  
+    if (string == 'C') {
         calculo.innerHTML = ''
+        string1 = ""
+        string2 = ""
     } else {
         oper = string
         calculo.innerHTML += string
@@ -49,42 +42,23 @@ function back() {
     }
 }
 
-function isFloat(value) {
-    return Number.isFinite(value) && !Number.isInteger(value);
-}
-
 function result() {
     var calculo = document.querySelector('header#calculo')
     if (oper == '+') {
         var resultado = Number(string1) + Number(string2)
-        if (isFloat(resultado)) {
-            calculo.innerHTML = resultado.toFixed(3)
-        } else {
-            calculo.innerHTML = resultado
-        }
     } else if (oper == '-') {
         var resultado = Number(string1) - Number(string2)
-        if (isFloat(resultado)) {
-            calculo.innerHTML = resultado.toFixed(3)
-        } else {
-            calculo.innerHTML = resultado
-        }
     } else if (oper == 'x') {
         var resultado = Number(string1) * Number(string2)
-        if (isFloat(resultado)) {
-            calculo.innerHTML = resultado.toFixed(3)
-        } else {
-            calculo.innerHTML = resultado
-        }
     } else if (oper == '/') {
         var resultado = Number(string1) / Number(string2)
-        if (isFloat(resultado)) {
-            calculo.innerHTML = resultado.toFixed(3)
-        } else {
-            calculo.innerHTML = resultado
-        }
     } 
-    if (teste = 1) {
-        teste = 0
+    if (!Number.isInteger(resultado)) {
+        calculo.innerHTML = resultado.toFixed(3)
+    } else {
+        calculo.innerHTML = resultado
     }
+    string1 = resultado
+    string2 = ''
+
 } 
