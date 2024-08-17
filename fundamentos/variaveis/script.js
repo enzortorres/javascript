@@ -28,3 +28,15 @@ let number = 1
     console.log('let // dentro =', number)
 }
 console.log("let // fora =", number)
+
+for (var i = 0; i < 10; i++) {
+    // console.log(i)
+}
+
+console.log('i =', i) // var define a variavel como global
+
+for (let j = 0; j < 10; j++) {
+    // console.log(j)
+}
+
+// console.log('j =', j) // ERRO! let só define a varivel dentro do bloco
