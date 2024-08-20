@@ -40,4 +40,3 @@ console.log(subtracao(3,2))
 const imprimir2 = a => console.log(a)
 
 imprimir2('test')
-w
