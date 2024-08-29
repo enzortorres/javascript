@@ -147,8 +147,20 @@
 
 // document.write(`${celsius} Celsius para Fahrenheit: ${CelsiusToFahrenheit(celsius)}`)
 
-var numbers = []
-numbers[0] = 0
-function fibonacci() {
-    for ()
+function fibonacci(n) {
+    if (n <= 1) {
+        return n
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2)
+    }
 }
+
+function sequenciaFibonacci(n) {
+    let list = []
+    for (let i = 0; i < n; i++) {
+        list.push(fibonacci(i))
+    }
+    return list
+}
+
+document.write(sequenciaFibonacci(10))
