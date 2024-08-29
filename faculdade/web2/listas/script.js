@@ -44,3 +44,24 @@
 //         alert('ERRO! Digite um operador válido!')
 // }
 
+// var salario = +(prompt("Digite o seu salário:")) // EXERCÍCIO 3
+
+// if (salario <= 280) {
+//     aumento = 0.20
+// } else if(salario <= 700) {
+//     aumento = 0.15
+// } else if (salario <= 1500) {
+//     aumento = 0.10
+// } else {
+//     aumento = 0.05
+// }
+// var salarioAtual = salario + salario * aumento 
+// document.write(`Seu salário de R$${salario} teve um aumento de ${aumento * 100}% e passou a ser R$${salarioAtual}!`)
+const months = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+        'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+
+var date = prompt("Digite o dia de seu nascimento no formato (dd/mm/yyyy)")
+const [day, month, year] = date.split('/')
+var monthNumber = Number(month) - 1
+
+document.write(`${day} de ${months[monthNumber]} de ${year}`)

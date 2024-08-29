@@ -28,3 +28,23 @@ resultadoAluno(-1)
 resultadoAluno(11)
 resultadoAluno(1100)
 resultadoAluno(0)
+
+var temp = 20
+var status = ''
+
+switch(temp) {
+    case(temp < 15):
+        status = 'Frio'
+        break
+
+    case(temp >= 15 && temp < 25):
+        status = 'Agradavel'
+        break
+
+    case(temp >= 25):
+        status = 'Quente'
+        break
+
+    default:
+        status = 'Temperatura inválida'
+}
