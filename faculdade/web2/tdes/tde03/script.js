@@ -1,4 +1,4 @@
-// var number1 = +(prompt("Digite um numero:") // 1
+// var number1 = +(prompt("Digite um numero:") // EXERCÍCIO 1
 // var number2 = +(prompt("Digite outro numero:"))
 // var oper = prompt("Operação: (+, -, *, /)")
 
@@ -17,7 +17,7 @@
 //         break
 // }
 
-// var valor = +(prompt("Digite o valor total:")) // 2 e 3
+// var valor = +(prompt("Digite o valor total:")) // EXERCÍCIOS 2 e 3
 // var cod = +(prompt("Codigo de desconto:"))
 // var formaPagamento = +(prompt("Forma de pagamento: 1 (À vista) 2(À prazo)"))
 
@@ -43,7 +43,7 @@
 //         break
 // }
 
-// var conceito = prompt("Digite o conceito do aluno:") // 4
+// var conceito = prompt("Digite o conceito do aluno:") // EXERCÍCIO 4
 // switch (conceito) {
 //     case 'A':
 //         document.write(`Conceito ${conceito}! Excelente!`)
@@ -67,7 +67,7 @@
 //         document.write("ERRO! Conceito inválido!")
 // }
 
-// var letra = prompt("Digite uma letra:") // 6
+// var letra = prompt("Digite uma letra:") // EXERCÍCIO 5
 
 // switch(letra) {
 //     case 'A': case 'E': case 'I': case 'O': case 'U':
@@ -76,14 +76,14 @@
 //         document.write("Consoante")
 // }
 
-// var lista = [1,2,3,4,5,6,7,8,9] // 6
+// var lista = [1,2,3,4,5,6,7,8,9] // EXERCÍCIO 6
 
 // for(let i = 0; i < lista.length; i++) {
 //     if(lista[i] % 2 == 0) {
 //         document.write(`${lista[i]}`)
 //     }
 // }
-// for (let i = 0; i < 5; i++) { // 7
+// for (let i = 0; i < 5; i++) { // EXERCÍCIO 7
 //     var nota = +(prompt("Digite um valor entre 0 e 10"))
 //     if (nota < 0 || nota > 10) {
 //         alert('Valor inválido!')
@@ -93,7 +93,7 @@
 //     }
 // }
 // document.write(`Nota digitada: ${nota}`)
-// for (let i = 0; i < 5; i++) { // 8
+// for (let i = 0; i < 5; i++) { // EXERCÍCIO 8
 //     var nome = prompt("Digite o seu nome:")
 //     var senha = prompt('Digite a sua senha:')
 //     if (nome === senha) {
@@ -104,7 +104,7 @@
 //         break
 //     }
 // }
-// var nums = [] // 9
+// var nums = [] //  EXERCÍCIO 9
 // var soma = 0, menor = 0, maior = 0
 // for (let i = 0; i < 3; i++) {
 //     nums[i] = +(prompt("Digite um numero"))
@@ -115,7 +115,7 @@
 
 // document.write(`Maior numero: ${maior}<br>Menor numero: ${menor}<br>Soma dos valores: ${soma}`)
 
-// var qtdTurma = +(prompt("Quantidade de turmas:")) // 10
+// var qtdTurma = +(prompt("Quantidade de turmas:")) // EXERCÍCIO 10
 // var qtdAlunos = []
 // var somaAlunos = 0
 // for (let i = 0; i < qtdTurma; i++) {
@@ -129,7 +129,7 @@
 // var media = qtdAlunos
 // document.write(`Media de alunos por turma: ${media} alunos`)
 
-// var number = +(prompt("Digite um numero:")) // 11
+// var number = +(prompt("Digite um numero:")) // 1EXERCÍCIO 1
 // var porcent = +(prompt("Digite a porcentagem que deseja:"))
 
 // function porcentagem(number, porcent) {
@@ -138,29 +138,40 @@
 // }
 // document.write(`${porcent}% de ${number} é ${porcentagem(number,porcent)}`)
 
-// var celsius = +(prompt("Digite uma temperatura em Celsius:")) // 12
+// var celsius = +(prompt("Digite uma temperatura em Celsius:")) // EXERCÍCIO 12
 
 // function CelsiusToFahrenheit(c) {
 //     res = c * 1.8 + 32
 //     return res
 // }
 
-// document.write(`${celsius} Celsius para Fahrenheit: ${CelsiusToFahrenheit(celsius)}`)
+// document.write(`${celsius} Celsius para Fahrenheit fica: ${CelsiusToFahrenheit(celsius)}`)
 
-function fibonacci(n) {
-    if (n <= 1) {
-        return n
-    } else {
-        return fibonacci(n - 1) + fibonacci(n - 2)
-    }
-}
+// function fibonacci(n) { // EXERCÍCIO 13
+//     if (n <= 1) {
+//         return n
+//     } else {
+//         return fibonacci(n - 1) + fibonacci(n - 2)
+//     }
+// }
 
-function sequenciaFibonacci(n) {
-    let list = []
-    for (let i = 0; i < n; i++) {
-        list.push(fibonacci(i))
-    }
-    return list
-}
+// function sequenciaFibonacci(n) {
+//     let list = []
+//     for (let i = 0; i < n; i++) {
+//         list.push(fibonacci(i))
+//     }
+//     return list
+// }
 
-document.write(sequenciaFibonacci(10))
+// document.write(sequenciaFibonacci(10))
+
+// function raizQuadrada(n) { // EXERCÍCIO 14
+//     return Math.sqrt(n)
+// }
+// document.write(raizQuadrada(9))
+
+// function checkNumber(n1, n2) { // EXERCÍCIO 15
+//     if (n1 >= n2) {
+//         document.write(`O número ${n1} é maior ou igual ao número ${n2}`)
+//     }
+// }

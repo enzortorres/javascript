@@ -6,7 +6,7 @@ function fibonacci(list) {
     return list
 }
 console.log(fibonacci(numbers))
-
+ 
 function fibonacci(n) { // SEGUNDO MODO QUE CONSEGUI
     let numbers = [0, 1]
     for (let i = 2; i < n; i++) {
