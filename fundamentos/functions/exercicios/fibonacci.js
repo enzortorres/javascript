@@ -5,8 +5,8 @@ function fibonacci(list) {
     }
     return list
 }
-console.log(fibonacci(numbers))
- 
+// console.log(fibonacci(numbers))
+
 function fibonacci(n) { // SEGUNDO MODO QUE CONSEGUI
     let numbers = [0, 1]
     for (let i = 2; i < n; i++) {
@@ -31,4 +31,4 @@ function sequenciaFibonacci(n) {
     return list
 }
 
-document.write(sequenciaFibonacci(10))
+console.log(sequenciaFibonacci(20))
