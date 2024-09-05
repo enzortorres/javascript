@@ -35,3 +35,8 @@ function verificar() {
         typedNumber.focus()
     }
 }
+
+const form = document.getElementById('formulario')
+form.addEventListener('submit', e => {
+    e.preventDefault()
+})
