@@ -17,10 +17,11 @@ function verificar() {
         if (typedNumber.value == random) {
             
             if (tries == 1) {
-                document.getElementById('res').innerHTML += `Você acertou de primeira, você é demais!`
+                document.getElementById('res').innerHTML = `Você acertou de primeira, você é demais!<br>`
             } else {
                 document.getElementById('res').innerHTML = `Você acertou com ${tries} tentativas! Meus parabéns!<br>`
             }
+            document.getElementById('res').innerHTML += `O número era ${random}`
             random = randomNumber()
             tries = 0
         } else {
