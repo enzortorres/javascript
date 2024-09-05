@@ -31,4 +31,4 @@ function sequenciaFibonacci(n) {
     return list
 }
 
-console.log(sequenciaFibonacci(20))
+document.write(sequenciaFibonacci(20))
