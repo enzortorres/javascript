@@ -2,6 +2,7 @@ const nome = 'Enzo'
 const concatenacao = 'Olá ' + nome + '!'
 const template = `
     Olá
-    ${nome}!`
+    ${nome}!
+`
     
 console.log(concatenacao, template)
