@@ -17,6 +17,7 @@ console.log('universidade '.concat(universidade).concat('!'))
 console.log('universidade ' + universidade + '!')
 console.log(universidade.replace('e', 3))
 console.log(universidade.replace(/\w/g, 3)) // /\d/ é uma expressão regular, serve para substituir todos os digítos. /\w\ para as letras e se botar a tag g no final substituí tudo.
+console.log('    Remove whitespace   '.trim());
 
 console.log('Ana, Maria, Pedro'.split(','))
 const up = text => text.toUpperCase()

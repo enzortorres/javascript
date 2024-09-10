@@ -3,12 +3,15 @@
 
 // Constexto léxico em ação!
 
-const x = 'Global'
+const teste = 'Global'
 
 function fora() {
-    const x = 'Local'
+    const teste = 'Local'
     function dentro() {
-        return x
+        return teste
     }
     return dentro
 }
+
+const minhaFuncao = fora()
+console.log(minhaFuncao())
