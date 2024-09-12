@@ -86,45 +86,94 @@
 // document.write(`<br> O número 2 encontra-se no array? ${f.includes ? 'sim' : 'não'}`)
 // document.write(`<br> O número 12 encontra-se no array? ${f.includes(12) ? 'sim' : 'não'}`)
 
-//? push() - adiciona um novo elemento no final do array
-var h = [10,20,30,40]
-h.push(50)
-document.write(`<br>${h}`)
+// //? push() - adiciona um novo elemento no final do array
+// var h = [10,20,30,40]
+// h.push(50)
+// document.write(`<br>${h}`)
 
-//? pop() - remove o último elemento do vetor
-h.pop()
-document.write(`<br>${h}`)
+// //? pop() - remove o último elemento do vetor
+// h.pop()
+// document.write(`<br>${h}`)
 
-//? unshift() - adicionar novo elemento no inicio do vetor
-h.unshift(0)
-document.write(`<br>${h}`)
+// //? unshift() - adicionar novo elemento no inicio do vetor
+// h.unshift(0)
+// document.write(`<br>${h}`)
 
-//? shift() - remover o primeiro elemento
-h.shift()
-document.write(`<br>${h}`)
+// //? shift() - remover o primeiro elemento
+// h.shift()
+// document.write(`<br>${h}`)
 
-//? slice - fatia o array sem alterar o array original
-document.write(`<br>${h.slice(2)}`)
-document.write(`<br>${h.slice(0,2)}`)
+// //? slice - fatia o array sem alterar o array original
+// document.write(`<br>${h.slice(2)}`)
+// document.write(`<br>${h.slice(0,2)}`)
 
-aluno = 'Enzo Ribas Torres'
-a = aluno.slice(0,4)
-document.write(`<br>${a}`)
-a1 = aluno.slice(4)
-document.write(`<br>${a1}`)
+// let aluno = 'Enzo Ribas Torres'
+// let a1 = aluno.slice(0,4)
+// document.write(`<br>${a1}`)
 
-carro = ['Jeta', 'Fiat', 'Focus', 'Cruze', 'Corolla', 'Civic', 'Elantra']
-c = carro.slice(2)
-document.write(`<br>${c}`)
+// let a2 = aluno.slice(4)
+// document.write(`<br>${a2}`)
 
-c1= carro.slice(2,3)
-document.write(`<br>${c1}`)
+// let carro = ['Jeta', 'Fiat', 'Focus', 'Cruze', 'Corolla', 'Civic', 'Elantra']
+// let c1 = carro.slice(2)
+// document.write(`<br>${c1}`)
 
-c2= carro.slice(2,5)
-document.write(`<br>${c2}`)
+// let c2 = carro.slice(2,3)
+// document.write(`<br>${c2}`)
 
-c3= carro.slice(-4, -2)
-document.write(`<br>${c3}`)
+// let c3 = carro.slice(2,5)
+// document.write(`<br>${c3}`)
 
-c4 = carro.slice(-6, -3)
-document.write(`<br>${c4}`)
+// let c4 = carro.slice(-4, -2)
+// document.write(`<br>${c4}`)
+
+// let c5 = carro.slice(-6, -3)
+// document.write(`<br>${c5}`)
+
+// let email = 'exemplo@gmail.com'
+// let e = email.slice(email.indexOf("@")+1)
+// document.write(`<br>${e}`)
+
+// e1 = email.slice(email.lastIndexOf("m")+1)
+// document.write(`<br>${e1}`)
+
+// e2 = email.slice(email.lastIndexOf("e"))
+// document.write(`<br>${e2}`)
+
+// nome2 = 'Thereza'
+
+// n1 = nome2.slice(-3)
+// document.write(`<br>${n1}`)
+
+// //? splice() - 1º valor: posição, 2º valor: quantidade de elementos excluídos, 3º valor: novos elementos
+
+// d = ['Segunda', 'Terça', 'Quarta']
+
+// d1 = d.splice(1,1)
+// document.write(`<br>${d1}`)
+
+// d2 = d.splice(1, 1, 'Quinta', 'Sexta')
+// document.write(`<br>${d}`)
+
+// nome = []
+// for (let i = 0; i < 5; i++) {
+//     nome[i] = prompt('Digite o seu nome')
+// }
+// document.write(`<br>Nome:${nome}`)
+// n = nome.splice(2,0,'Teste')
+// document.write(`<br>Nome:${nome}`)
+
+// //? Função anonima - n possui nome, atribui-se a função
+
+// const msg = function(x) {
+//     return `Olá ${x}, Bom dia!`
+// }
+// nome = prompt('Digite o seu nome:')
+// nome = nome[0].toUpperCase() + nome.substring(1)
+// document.write(`<br>${msg(nome)}`)
+
+const double = function(num) {
+    return num ** 2
+}
+num = Number(prompt("Digite um numero:"))
+document.write(`<br>${double(num)}`)
