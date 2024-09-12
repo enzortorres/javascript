@@ -172,8 +172,8 @@
 // nome = nome[0].toUpperCase() + nome.substring(1)
 // document.write(`<br>${msg(nome)}`)
 
-const double = function(num) {
-    return num ** 2
-}
-num = Number(prompt("Digite um numero:"))
-document.write(`<br>${double(num)}`)
+// const double = function(num) {
+//     return num ** 2
+// }
+// num = Number(prompt("Digite um numero:"))
+// document.write(`<br>${double(num)}`)
