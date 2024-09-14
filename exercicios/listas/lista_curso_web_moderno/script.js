@@ -1,4 +1,4 @@
-// const soma = (x,y) => x + y // EXERCÍCIO 1
+// const soma = (x,y) => x + y //! EXERCÍCIO 1
 // const sub = (x,y) => x - y
 // const mult = (x,y) => x * y
 // const div = (x,y) => x / y
@@ -12,7 +12,7 @@
 
 // allOpers(5,4)
 
-// const testTriangle = (x,y,z) => { // EXERCÍCIO 2
+// const testTriangle = (x,y,z) => { //! EXERCÍCIO 2
 //     if (x == y && y == z) {
 //         return 'Equilátero'
 //     } else if (x != y && x != z && y != z) {
