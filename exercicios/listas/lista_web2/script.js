@@ -169,3 +169,51 @@
 // }
 
 // document.getElementById('res').innerHTML = `O seu nome (${nome}) invertido fica: ${nomeInvertido(nome)}`
+
+// let agora = new Date() //! EXERCÍCIO 12
+// let diaSemana = agora.getDay()
+// let dia = agora.getDate()
+// let mes = agora.getMonth()
+// let ano = agora.getFullYear()
+// const diaSem = ['Domingo', 'Segunda-feira', 'Terça-feira',
+//                 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado']
+
+// const months = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+//                 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+
+
+
+// document.getElementById('res').innerHTML =  `Dia da semana: ${diaSem[diaSemana]}<br> Dia do mês: ${dia}<br> Mês: ${months[mes]}<br> Ano: ${ano}`
+
+
+
+
+// const soma = (n1, n2, n3) => n1 + n2 + n3 //! EXERCÍCIO 13
+// const media = (n1, n2, n3) => {
+//     total = soma(n1, n2, n3) / 3
+//     return total
+// }
+
+// document.getElementById('res').innerHTML = `Soma dos 3 valores: ${soma(1,2,3)}<br>Media dos 3 valores: ${media(1,2,3)}`
+
+
+// let numbers = [] //! EXERCÍCIO 14
+
+// for (let i = 0; i < 3; i++) {
+//     numbers.push(Number(prompt(`Digite o ${i+1} valor:`)))
+// }
+
+// const somaDeArray = (array) => {
+//     let total = 0
+//     for (let i = 0; i < 3; i++) {
+//         total += array[i] 
+//     }
+//     return total
+// }
+
+// const mediaDeArray = (array) => {
+//     total = somaDeArray(array) / 3
+//     return total
+// }
+
+// document.getElementById('res').innerHTML = `O resultado da media dos valores digitado foi: ${mediaDeArray(numbers)}`

@@ -23,3 +23,6 @@
 // }
 
 // document.write(`<br>O triângulo formado é um triângulo ${testTriangle(1,1,2)}`)
+
+
+
