@@ -177,3 +177,4 @@
 // }
 // num = Number(prompt("Digite um numero:"))
 // document.write(`<br>${double(num)}`)
+
