@@ -61,7 +61,7 @@ function subtracao() {
 
 
 
-const btn5 = document.querySelector('#btn5') //!EXERCÍCIO 5
+const btn5 = document.querySelector('#btn5') //! EXERCÍCIO 5
 const txtTabuada = document.querySelector('#res-tabuada')
 
 btn5.addEventListener('click', tabuada)
@@ -71,4 +71,19 @@ function tabuada() {
     for(let i = 0; i < 10; i++) {
         txtTabuada.innerHTML += `${number} x ${i+1} = ${number * (i+1)}<br>`
     }
+}
+
+
+const btn6 = document.querySelector('#btn6') //! EXERCÍCIO 6
+const txtFatorial = document.querySelector('#res-fatorial')
+
+btn6.addEventListener('click', fatorial)
+
+function fatorial () {
+    const number = +(document.querySelector('#ex6-number')).value
+    let fat = 1
+    for (let i = number; i > 0; i--) {
+        fat *= i
+    }
+    txtFatorial.innerHTML = `O resultado da fatorial de ${number} é ${fat}`
 }
