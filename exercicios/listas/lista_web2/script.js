@@ -321,15 +321,205 @@
 
 
 // let lados = [] //! EXERCÍCIO 20
-
-// for (let i = 0; i < 3; i++) {
-//     lados.push(+(prompt(`Digite o ${i+1}º lado`)))
+// function analisarTriangulo() {
+//     for (let i = 0; i < 3; i++) {
+//         lados.push(+(prompt(`Digite o ${i+1}º lado`)))
+//     }
+    
+//     if(lados[0] != lados[1] && lados[1] != lados[2]) {
+//         document.getElementById('res').innerHTML = 'Triângulo Isósceles';
+//     } else if(lados[0] == lados[1] && lados[1] == lados[2]) {
+//         document.getElementById('res').innerHTML = 'Triângulo Equilátero';
+//     } else {
+//         document.getElementById('res').innerHTML = 'Triângulo Escaleno';
+//     }
 // }
 
-// if(lados[0] != lados[1] && lados[1] != lados[2]) {
-//     document.getElementById('res').innerHTML = 'Triângulo Isósceles';
-// } else if(lados[0] == lados[1] && lados[1] == lados[2]) {
-//     document.getElementById('res').innerHTML = 'Triângulo Equilátero';
-// } else {
-//     document.getElementById('res').innerHTML = 'Triângulo Escaleno';
+// analisarTriangulo();
+
+
+
+
+// function preencherPessoas() { //! EXERCÍCIO 21
+//     var pessoas = []
+
+//     for(let i = 0;i < 5; i++) {
+//         let altura = parseFloat(prompt(`Digite a altura da ${i+1}º pessoa: `));
+//         let sexo = prompt(`Digite o sexo da ${i+1}º pessoa: `);
+
+//         pessoas.push({altura,sexo})
+//     }
+
+//     return pessoas;
 // }
+
+// function analisarPessoas(pessoas) {
+//     let qtdHomem = 0;
+//     let qtdMaior170 = 0;
+//     let maiorAltura = 0;
+//     let sexoMaiorAltura = '';
+
+//     for (let i = 0; i < pessoas.length; i++) {
+//         if(pessoas[i].sexo == 'M') {
+//             qtdHomem++;
+//         }
+//         if (pessoas[i].altura > 1.70) {
+//             qtdMaior170++;
+//         }
+//         if (pessoas[i].altura > maiorAltura) {
+//             maiorAltura = pessoas[i].altura;
+//             sexoMaiorAltura = pessoas[i].sexo;
+//         }
+//     }
+
+//     document.getElementById('res').innerHTML = `Quantidade de homens: ${qtdHomem}<br>
+//     Quantidade de pessoas maiores do que 1.70m: ${qtdMaior170}<br>
+//     Maior altura: ${maiorAltura}<br>
+//     Sexo da pessoa mais alta: ${sexoMaiorAltura}`;
+// }
+
+// let pessoas = preencherPessoas();
+// analisarPessoas(pessoas);
+
+
+
+// function Pais(nome, continente, capital) { //! EXERCÍCIO 22
+//     this.nome = nome;
+//     this.continente = continente;
+//     this.capital = capital;
+// }
+
+// function novoPais() {
+//     let nome = prompt("Digite o nome do seu país");
+//     let continente = prompt("Digite o nome do continente do seu país:");
+//     let capital = prompt("Digite o nome da capital do seu país:");
+
+//     let pais = new Pais(nome, continente, capital);
+
+//     return pais;
+// }
+
+// let meuPais = novoPais();
+// document.getElementById('res').innerHTML = `País: ${meuPais.nome}<br>
+// Continente: ${meuPais.continente}<br>
+// Capital: ${meuPais.capital}<br>`
+
+
+
+// function Pessoa(nome, idade, email, sexo) { //! EXERCÍCIO 23
+//     this.nome = nome;
+//     this.idade = idade;
+//     this.email = email;
+//     this.sexo = sexo;
+
+//     return pessoa;
+// }
+
+// function cadastrarPessoa() {
+//     let nome = prompt("Digite o seu nome: ");
+//     let idade = Number(prompt("Digite sua idade: "));
+//     let email = prompt("Digite seu email: ");
+//     let sexo = prompt("Digite o seu sexo");
+
+//     let pessoa = new Pessoa(nome, idade, email, sexo);
+
+//     return pessoa;
+// }
+
+// let pessoa = cadastrarPessoa();
+// document.getElementById('res').innerHTML = `
+//     Nome: ${pessoa.nome}<br>
+//     Idade: ${pessoa.idade}<br>
+//     Email: ${pessoa.email}<br>
+//     Sexo: ${pessoa.sexo}<br>
+// `
+
+
+
+// let fruta = { //! EXERCÍCIO 24
+//     cor: 'amarelo',
+//     tamanho: 'média',
+//     pais: 'Brasil'
+// }
+
+// function atualizarFruta() {
+//     fruta.cor  = prompt("Digite uma nova cor para a fruta:");
+//     fruta.tamanho = prompt("Digite um novo tamanho para a fruta (pequena, média ou grande):");
+//     fruta.pais = prompt("Digite um novo país para a fruta:");
+// }
+
+// atualizarFruta();
+
+// document.getElementById('res').innerHTML = `
+//     Nova cor da fruta: ${fruta.cor}<br>
+//     Novo tamanho da fruta: ${fruta.tamanho}<br>
+//     Novo país da fruta: ${fruta.pais}<br>
+// `
+
+
+
+
+// let escola = { //! EXERCÍCIO 25
+//     numeroAlunos: 0,
+//     nomeDiretor: '',
+//     anoFundacao: 0,
+//     endereco: {
+//         rua: '',
+//         bairro: '',
+//         cidade: ''
+//     }
+// }
+
+// function preencherDados() {
+//     escola.numeroAlunos = +(prompt("Digite a quantidade de alunos:"));
+//     escola.nomeDiretor = prompt("Digite o nome do diretor:");
+//     escola.anoFundacao = +(prompt("Digite o ano de fundação:"));
+//     escola.endereco.rua = prompt("Digite a rua da escola:");
+//     escola.endereco.bairro = prompt("Digite o bairro da escola:");
+//     escola.endereco.cidade = prompt("Digite a cidade da escola:");
+// }
+
+// preencherDados();
+
+// document.getElementById('res').innerHTML = `
+//     Escola<br>
+//     Número de alunos: ${escola.numeroAlunos}<br>
+//     Nome do diretor: ${escola.nomeDiretor}<br>
+//     Ano de fundação: ${escola.anoFundacao}<br><br>
+//     Endereço:<br><br>
+//     Rua: ${escola.endereco.rua}<br>
+//     Bairro: ${escola.endereco.bairro}<br>
+//     Cidade: ${escola.endereco.cidade}<br>
+// `
+
+
+// let carro = { //! EXERCÍCIO 26
+//     modelo: '',
+//     estado: '',
+//     precoBase: 0,
+//     ano: 0,
+//     calcularPreco: function() {
+//         let anoAtual = new Date().getFullYear();
+//         let diferencaAnos = anoAtual - this.ano;
+//         let valorEstimado = this.precoBase  - (1000 * diferencaAnos);
+
+//         return valorEstimado;
+//     }
+// }
+
+// function preencherDadosCarro() {
+//     carro.modelo = prompt("Digite o modelo do carro:");
+//     carro.estado = prompt("Digite o estado do carro:");
+//     carro.precoBase = parseInt(prompt("Digite o preço base do carro:"));
+//     carro.ano = parseFloat(prompt("Digite o ano do carro"));
+// }
+// preencherDadosCarro();
+// let valorEstimado = carro.calcularPreco();
+
+// document.getElementById('res').innerHTML = `
+//     Modelo do carro: ${carro.modelo}<br>
+//     Estado do carro: ${carro.estado}<br>
+//     Preço base do carro: ${carro.precoBase}<br>
+//     Ano do carro: ${carro.ano}<br>
+//     Valor estimado: R$${valorEstimado}<br>
+// `
