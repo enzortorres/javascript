@@ -17,12 +17,12 @@
 
 const pilares = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
 
-let maiorEsq = [0,0,0,0,0,0,0,0,0,0,0,0];
+let maiorEsq = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 for (let i = 1; i < pilares.length; i++) {
     maiorEsq[i] = Math.max(maiorEsq[i - 1], pilares[i - 1]);
 }
 
-let maiorDir = [0,0,0,0,0,0,0,0,0,0,0,0];
+let maiorDir = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 for (let i = pilares.length - 2; i >= 0; i--) {
     maiorDir[i] = Math.max(maiorDir[i + 1], pilares[i + 1]);
 }
@@ -39,12 +39,12 @@ for (let i = pilares.length - 2; i >= 0; i--) {
 //TODO [ 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 1, 0 ] maior direita
 //!    [ 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 ] pilares
 
-let blocoAgua = 0; 
+let qtdBlocoAgua = 0; 
 for (let i = 0; i < pilares.length; i++) {
     const alturaAgua = Math.min(maiorEsq[i], maiorDir[i]) - pilares[i]; //? 0, -1, 1, -1, 1, 2, 1, -1, 0, 1, -1, -1, -1
     if (alturaAgua > 0) {
-        blocoAgua += alturaAgua; //? 0, 0, 1, 1, 2, 4, 5, 5, 5, 6, 6, 6, 6
+        qtdBlocoAgua += alturaAgua; //? 0, 0, 1, 1, 2, 4, 5, 5, 5, 6, 6, 6, 6
     } 
 }
 
-console.log(`A quantidade de blocos de poça formados foram: ${blocoAgua}`);
+console.log(`A quantidade de blocos de poça formados foram: ${qtdBlocoAgua}`);
