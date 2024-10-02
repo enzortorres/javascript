@@ -217,3 +217,119 @@
 // }
 
 // document.getElementById('res').innerHTML = `O resultado da media dos valores digitado foi: ${mediaDeArray(numbers)}`
+
+
+
+
+// let array = []; //! EXERCÍCIO 15
+// let newArray = [];
+
+// for (let i = 0; i < 4; i++) {
+//     array.push(+(prompt(`Digite o ${i+1}º valor:`)));
+// }
+// let number = +(prompt("Digite um valor para comparação:"));
+// newArray = greaterThan(array, number);
+
+// document.getElementById('res').innerHTML = `Array nova: ${newArray}`;
+
+// function greaterThan(array, number) {
+//     let newArray = [];
+//     for(let i = 0; i < array.length; i++) {
+//         if(array[i] > number) {
+//             newArray.push(array[i]);
+//         }
+//     }
+//     return newArray;
+// }
+
+
+
+
+// let nomes1 = []; //! EXERCÍCIO 16
+// let nomes2 = [];
+
+// for (let i = 0; i < 3; i++) {
+//     nomes1.push(prompt(`Digite o ${i+1}º nome:`));
+// }
+
+// for (let i = 0; i < 3; i++) {
+//     if(i == 0) {
+//         nomes2.push(prompt(`Denovo! Digite o ${i+1}º nome:`));
+//     } else {
+//         nomes2.push(prompt(`Digite o ${i+1}º nome:`));
+//     }
+// }
+
+// document.getElementById('res').innerHTML += `${juntarNomes(nomes1, nomes2)}`
+
+// function juntarNomes (array1, array2) { 
+//     let nomesJuntos = [];
+//     for(let i = 0; i < 3; i++) {
+//         nomesJuntos.push(array1[i] + ` ${array2[i]}`);
+//     }
+//     return nomesJuntos;
+// }
+
+
+
+// const frase = "As pessoas costumam dizer que a motivação não dura sempre. Bem, nem o efeito do banho, por isso recomenda-se diariamente."; //! EXERCÍCIO 17
+
+// let inicio = frase.indexOf('motivação não dura sempre');
+// let fim = inicio + 'motivação não dura sempre'.length;
+// let trecho = frase.substring(inicio, fim);
+// let fraseFinal = trecho + '...';
+
+// document.getElementById('res').innerHTML = `Frase final: ${fraseFinal}`;
+
+
+
+// let number = parseFloat(prompt("Digite um valor em reais:")).toFixed(2); //! EXERCÍCIO 18
+// let numberInString = String(number).replace('.',',');
+// document.getElementById('res').innerHTML = `R$ ${numberInString}`;
+
+
+
+// function pedraPapelTesoura() {
+//     let escolha = prompt('Escolha uma jogada!\nPedra, Papel ou Tesoura!').toLowerCase(); //! EXERCÍCIO 19
+//     console.log(escolha);
+
+//     function randomChoice() {
+//         const randomNumber = Math.floor(Math.random() * 3);
+//         const escolhasBot = ['pedra', 'papel', 'tesoura'];
+//         return escolhasBot[randomNumber];
+//     }
+
+//     let escolhaBot = randomChoice();
+
+//     alert(`Você escolheu ${escolha} e seu oponente escolheu ${escolhaBot}!`);
+//     if(escolha == escolhaBot) {
+//         alert(`Empate!`);
+//     } else if (escolha == "papel" && escolhaBot == "pedra") {
+//         alert('Você ganhou!');
+//     } else if (escolha == "pedra" && escolhaBot == "tesoura") {
+//         alert('Você ganhou!');
+//     } else if (escolha == "tesoura" && escolhaBot == "papel") {
+//         alert('Você ganhou!');
+//     } else {
+//         alert('Você perdeu!');
+//     }
+// }
+
+// pedraPapelTesoura();
+
+
+
+
+// let lados = [] //! EXERCÍCIO 20
+
+// for (let i = 0; i < 3; i++) {
+//     lados.push(+(prompt(`Digite o ${i+1}º lado`)))
+// }
+
+// if(lados[0] != lados[1] && lados[1] != lados[2]) {
+//     document.getElementById('res').innerHTML = 'Triângulo Isósceles';
+// } else if(lados[0] == lados[1] && lados[1] == lados[2]) {
+//     document.getElementById('res').innerHTML = 'Triângulo Equilátero';
+// } else {
+//     document.getElementById('res').innerHTML = 'Triângulo Escaleno';
+// }
