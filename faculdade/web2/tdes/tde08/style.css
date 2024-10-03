@@ -1,0 +1,33 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#text {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#start {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#space {
+    color: black;
+    background: rgba(255, 0, 0, 0.3);
+    outline: 2px solid red;
+    padding: 10px;
+}
+
+#key {
+    text-align: center;
+    font-size: 100px;
+}
+
+#res {
+    text-align: left;
+    font-weight: bold;
+    margin: 100px 0px 0px 20px;
+}
