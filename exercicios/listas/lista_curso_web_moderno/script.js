@@ -12,17 +12,21 @@
 
 // allOpers(5,4)
 
-// const testTriangle = (x,y,z) => { //! EXERCÍCIO 2
+// let lado1 = +(prompt("Digite o primeiro lado:")); //! EXERCÍCIO 2
+// let lado2 = +(prompt("Digite o segundo lado:"));
+// let lado3 = +(prompt("Digite o terceiro lado:"));
+
+// const testTriangle = (x,y,z) => { 
 //     if (x == y && y == z) {
-//         return 'Equilátero'
+//         return 'Equilátero';
 //     } else if (x != y && x != z && y != z) {
-//         return 'Escaleno'
+//         return 'Escaleno';
 //     } else {
-//         return 'Isósceles'
+//         return 'Isósceles';
 //     }
 // }
 
-// document.write(`<br>O triângulo formado é um triângulo ${testTriangle(1,1,2)}`)
+// document.getElementById('res').innerHTML = `<br>O triângulo formado é um triângulo ${testTriangle(lado1, lado2, lado3)}`;
 
 
 
