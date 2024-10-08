@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    user-select: none;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.last {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
