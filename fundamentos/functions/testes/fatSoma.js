@@ -7,6 +7,7 @@ function fatorial(number) {
     }
     return fat
 }
+console.log(fatorial(5));
 
 function fat(number) {
     if (number == 1) {

@@ -145,7 +145,7 @@
 // n1 = nome2.slice(-3)
 // document.write(`<br>${n1}`)
 
-// //? splice() - 1º valor: posição, 2º valor: quantidade de elementos excluídos, 3º valor: novos elementos
+// //? splice() - 1º valor: posição, 2º valor: quantidade de elementos excluídos, 3º e N valor: novos elementos (retorna os valores removidos)
 
 // d = ['Segunda', 'Terça', 'Quarta']
 
@@ -177,4 +177,3 @@
 // }
 // num = Number(prompt("Digite um numero:"))
 // document.write(`<br>${double(num)}`)
-
