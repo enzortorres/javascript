@@ -145,7 +145,7 @@
 // n1 = nome2.slice(-3)
 // document.write(`<br>${n1}`)
 
-// //? splice() - 1º valor: posição, 2º valor: quantidade de elementos excluídos, 3º e N valor: novos elementos (retorna os valores removidos)
+// //? splice() - 1º valor: posição, 2º valor: quantidade de elementos excluídos, 3º e N valor: novos elementos (retorna os valores removidos e modifica a array original)
 
 // d = ['Segunda', 'Terça', 'Quarta']
 
@@ -163,7 +163,7 @@
 // n = nome.splice(2,0,'Teste')
 // document.write(`<br>Nome:${nome}`)
 
-// //? Função anonima - n possui nome, atribui-se a função
+// //? Função anonima - não possui nome, atribui-se a função
 
 // const msg = function(x) {
 //     return `Olá ${x}, Bom dia!`

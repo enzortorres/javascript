@@ -64,3 +64,23 @@ for(let i = 0; i < 6; i++) {
     }
 }
 document.write(`<br>Os numeros eram ${randomNumbers} e você acertou ${qtdAcertos}, a chance de acertar é de 1 em ${chance}!`);
+
+
+
+var frase = prompt("Digite uma frase:")
+console.log(contarVogais(frase))
+
+function contarVogais(frase) {
+    const vogais = ['a','e','i','o','u','A','E','I','O','U']
+    if (frase.length == 0) {
+        return 0
+    } else {
+        var qtdVogais = 0
+        for (let i = 0; i < frase.length; i++) {
+            if(vogais.includes(frase.charAt(i))) {
+                qtdVogais++
+            }
+        }
+        return qtdVogais
+    }
+}
