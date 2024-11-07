@@ -1,0 +1,39 @@
+#dvSlider {
+    width: 1000px;
+    height: 300px;
+    border: 1px solid black;
+    background-image: url("images/bart.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.btn {
+    color: red;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.left {
+    position: absolute;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+}
